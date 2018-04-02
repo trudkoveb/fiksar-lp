@@ -1,0 +1,58 @@
+@media (#{$max_tablets})
+    body
+        background-image: none
+
+    .wrapper
+        width: 100%
+        height: auto
+        padding-right: 5%
+        padding-bottom: 10%
+        &:after
+            display: none
+
+    .header-wrapper
+        flex-wrap: wrap
+        align-items: flex-start
+        justify-content: space-between
+        .logo
+            width: 100%
+            margin-bottom: 40px
+        .mobile-menu
+            display: block
+            width: 20%
+            background-color: transparent
+            .icon
+                width: 50px
+                height: 50px
+        nav
+            width: 80%
+            padding-left: 10%
+            display: none
+            ul
+                padding-left: 0
+                flex-wrap: wrap
+                li
+                    width: 100%
+                    &:not(:last-child)
+                        margin-bottom: 20px
+    .title
+        form, .tags-wrapper
+            width: 100%
+
+    footer
+        position: static
+        ul
+            flex-wrap: wrap
+            li
+                width: 100%
+                &:not(:last-child)
+                    margin-bottom: 20px
+
+@media (#{$min_tablets}) and (#{$max_laptop})
+    .wrapper
+        width: 70%
+        form, .tags-wrapper
+            width: 100%
+        .tags-wrapper
+            .tags
+                width: 90%

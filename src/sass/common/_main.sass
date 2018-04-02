@@ -1,0 +1,130 @@
+.header-wrapper
+    display: flex
+    align-items: flex-end
+    .logo
+        width: 20%
+        background-color: $color-blue
+        border-radius: 0 0 10px 10px
+        text-align: center
+        padding-top: 60px
+        padding-bottom: 10px
+        box-shadow: 0 20px 15px -10px #C8DBF5
+        p
+            font-family: $font-medium
+            font-size: 24px
+            color: #fff
+    .mobile-menu
+        display: none
+    nav
+        width: 80%
+        ul
+            display: flex
+            padding-left: 15%
+            padding-bottom: 15px
+            li
+                display: flex
+                align-items: center
+                &:not(:last-child)
+                    margin-right: 30px
+                &.active
+                    @include active
+                a
+                    color: $color-dark
+                    font-family: $font-book
+                .icon
+                    width: 25px
+                    height: 24px
+                    margin-right: 5px
+
+.title
+    padding-top: 20%
+    h1
+        font-family: $font-book
+        font-size: 48px
+        line-height: 63px
+        margin-bottom: 40px
+        @include capitalize
+        span
+            @include default-color
+    form
+        width: 80%
+        height: 70px
+        display: flex
+        align-items: center
+        margin-bottom: 50px
+        margin-left: 10px
+        box-shadow: 0 30px 20px -10px #E9E5E0
+        .icon
+            width: 30px
+            height: 25px
+            margin-right: -40px
+            position: relative
+            z-index: 100
+            &.active
+                fill: $color-blue
+        input[type='text']
+            width: 70%
+            height: 100%
+            border-radius: 10px 0 0 10px
+            padding-right: 10px
+            padding-left: 60px
+            font-family: $font-book
+            font-size: 17px
+        input[type='submit']
+            width: 30%
+            height: 100%
+            border-radius: 0 10px 10px 0
+            background-color: $color-blue
+            color: #fff
+            font-family: $font-book
+            font-size: 17px
+    .tags-wrapper
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        width: 80%
+        .tags
+            width: 75%
+            a
+                font-family: $font-reg
+                font-size: 13px
+                background-color: #fff
+                border-radius: 15px
+                padding: 10px 15px
+                margin-right: 10px
+                color: $color-grey
+                display: inline-block
+                margin-bottom: 10px
+                @include capitalize
+                &:hover
+                    box-shadow: 2px 6px 10px 0px #E0E4EA
+        button
+            background-color: #fff
+            border-radius: 10px
+            padding: 10px
+            &:hover
+                box-shadow: 2px 6px 10px 0px #E0E4EA
+            .icon
+                width: 21px
+                height: 10px
+
+footer
+    position: absolute
+    z-index: 100
+    bottom: 0
+    width: 100%
+    background-color: #fff
+    padding: 30px 5%
+    ul
+        display: flex
+        justify-content: space-between
+        li
+            display: flex
+            align-items: center
+            &.active
+                @include active
+            a
+                font-family: $font-reg
+                font-size: 18px
+                color: $color-grey
+                margin-left: 10px

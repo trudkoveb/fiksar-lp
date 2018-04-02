@@ -1,0 +1,44 @@
+body
+    background: url("../img/bg/bg-main-page.jpg") no-repeat
+    background-size: cover
+    position: relative
+    height: 100vh
+
+.wrapper
+    width: 48%
+    padding-left: 5%
+    background: linear-gradient(to right, #FBF8F4 , #EDE3D7);
+    position: relative
+    z-index: 20
+    height: 100vh
+    &:after
+        content: ''
+        position : absolute
+        top: -12px
+        width : 1000%
+        height : 100%
+        left: 100%
+        border-top: 6px solid transparent
+        border-right: 6px solid transparent
+        border-bottom: 6px solid transparent
+        border-left: none
+        background: #EDE3D7
+        transform-origin: 0 100%
+        transform : perspective(1px) rotateY(1.15deg)
+
+//  common
+a
+    text-decoration: none
+
+input, button
+    outline: none
+    border: none
+
+button, input[type="submit"]
+    cursor: pointer
+
+// svg icons
+.icon
+    fill: $color-grey
+    width: 32px
+    height: 30px
