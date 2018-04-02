@@ -1,10 +1,13 @@
-# Ready gulp-project
+# Fiksar landing page
 
 1. Deploy a project
+    a. For dev :
     'npm install'  - install all dependencies
-    'gulp sass' - collect styles
-    'gulp pug-html' - only if .pug templates in project
     'gulp watch' - run project
+
+    b. To collect :
+    'npm install'  - install all dependencies
+    'gulp build'  - collect sources to ready project to folder /dist
 
 
 2. Tasks
@@ -14,9 +17,11 @@
     'gulp min-css' - minify css
     'gulp min-image' - compress images
     'gulp px-rem' - convert px to rem
+    'gulp clean' - clean /dist before collecting
     'gulp watch' - all tasks + run localhost
     'gulp build' - collect all sources to /dist. This task automatically clean the folder before collecting.
 
 
 Optional :
-    'npm install bower' - install bower for libriares, e.g. jquery ( 'bower install jquery' ). All libriares install to src/libs
+    'npm install bower' - install bower for libriares. All libriares install to src/libs
+    - e.g. to install last version of jquery 'bower install jquery'
